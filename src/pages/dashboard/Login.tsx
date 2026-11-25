@@ -26,7 +26,21 @@ const Login = () => {
       </div>
       <div className="flex flex-col justify-center items-center h-[80vh]">
         <h1 className="text-2xl font-bold mb-4 text-[#aee9f5]">Login</h1>
-        <form onSubmit={handleSubmit} className="w-[200px] max-w-full">
+        <div className="w-[250px] mb-2 p-4 bg-[#0000FF] text-white rounded-[10px]">
+          <h2 className="mb-1 font-bold text-[#aee9f5]">
+            Demo Access Credentials
+          </h2>
+          <p className="mb-3 text-[#aee9f5]">
+            Enter these credentials for a full access of the site:
+          </p>
+          <p className="text-[#aee9f5]">
+            Email: <span className="font-bold text-white">admin@gmail.com</span>
+          </p>
+          <p className="text-[#aee9f5]">
+            Password: <span className="font-bold text-white">Password123@</span>
+          </p>
+        </div>
+        <form onSubmit={handleSubmit} className="w-[250px] max-w-full">
           <div className="flex flex-col gap-0.5 mb-1">
             <label htmlFor="email">Email</label>
             <input
@@ -34,7 +48,7 @@ const Login = () => {
               type="text"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="border border-[#aee9f5] rounded-[3px] p-1.5 focus:outline-[dodgerblue]"
+              className="border border-[#aee9f5] rounded-[10px] p-1.5 focus:outline-[dodgerblue]"
             />
           </div>
           <div className="flex flex-col gap-0.5 mb-3">
@@ -44,12 +58,12 @@ const Login = () => {
               type="text"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="border border-[#aee9f5] rounded-[3px] p-1.5 focus:outline-[dodgerblue]"
+              className="border border-[#aee9f5] rounded-[10px] p-1.5 focus:outline-[dodgerblue]"
             />
           </div>
           <button
             type="submit"
-            className="w-full p-1.5 rounded-[3px] bg-[#aee9f5] text-center cursor-pointer hover:border-[dodgerblue]"
+            className="w-full p-1.5 border border-[#aee9f5] rounded-[10px] bg-[#aee9f5] text-center cursor-pointer hover:border-[dodgerblue]"
           >
             {loading ? "Submitting..." : "Submit"}
           </button>
