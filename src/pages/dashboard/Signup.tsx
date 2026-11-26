@@ -30,7 +30,7 @@ const Signup = () => {
     <div className="flex flex-col justify-center items-center h-[80vh]">
       <h1 className="text-2xl font-bold mb-4 text-[#aee9f5]">Signup</h1>
 
-      <form onSubmit={handleSubmit} className="w-[200px] max-w-full">
+      <form onSubmit={handleSubmit} className="w-[250px] max-w-full">
         <div className="flex flex-col gap-0.5 mb-1">
           <label htmlFor="firstName">First Name</label>
           <input
@@ -39,7 +39,7 @@ const Signup = () => {
             value={fName}
             onChange={(e) => setFName(e.target.value)}
             required
-            className="border border-[#aee9f5] rounded-[3px] p-1.5 focus:outline-[dodgerblue]"
+            className="border border-[#aee9f5] rounded-[10px] p-1.5 focus:outline-[dodgerblue]"
           />
         </div>
         <div className="flex flex-col gap-0.5 mb-1">
@@ -50,7 +50,7 @@ const Signup = () => {
             value={lName}
             onChange={(e) => setLName(e.target.value)}
             required
-            className="border border-[#aee9f5] rounded-[3px] p-1.5 focus:outline-[dodgerblue]"
+            className="border border-[#aee9f5] rounded-[10px] p-1.5 focus:outline-[dodgerblue]"
           />
         </div>
         <div className="flex flex-col gap-0.5 mb-1">
@@ -61,7 +61,7 @@ const Signup = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-            className="border border-[#aee9f5] rounded-[3px] p-1.5 focus:outline-[dodgerblue]"
+            className="border border-[#aee9f5] rounded-[10px] p-1.5 focus:outline-[dodgerblue]"
           />
         </div>
         <div className="flex flex-col gap-0.5 mb-1">
@@ -72,7 +72,7 @@ const Signup = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
-            className="border border-[#aee9f5] rounded-[3px] p-1.5 focus:outline-[dodgerblue]"
+            className="border border-[#aee9f5] rounded-[10px] p-1.5 focus:outline-[dodgerblue]"
           />
         </div>
         <div className="flex gap-1 justify-center m-3">
@@ -81,7 +81,7 @@ const Signup = () => {
         </div>
         <button
           type="submit"
-          className="w-full p-1.5 rounded-[3px]  bg-[#aee9f5] text-center cursor-pointer hover:border-[dodgerblue]"
+          className="w-full p-1.5 border border-[#aee9f5] rounded-[10px]  bg-[#aee9f5] text-center cursor-pointer hover:border-[dodgerblue]"
         >
           {loading ? "Submitting..." : "Submit"}
         </button>
