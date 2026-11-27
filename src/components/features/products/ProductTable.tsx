@@ -58,7 +58,7 @@ const ProductTable = ({ products, onEdit }: ProductTableProps) => {
                     <img
                       src={product.images[0].url}
                       alt={product.title}
-                      className="w-1/4 min-w-20 aspect-square rounded-lg object-cover"
+                      className="w-1/8 min-w-20 aspect-square rounded-lg object-cover"
                     />
                     <span>{product.title}</span>
                   </div>
