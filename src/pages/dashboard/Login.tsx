@@ -26,18 +26,16 @@ const Login = () => {
       </div>
       <div className="flex flex-col justify-center items-center h-[80vh]">
         <h1 className="text-2xl font-bold mb-4 text-[#aee9f5]">Login</h1>
-        <div className="w-[250px] mb-2 p-4 bg-[#0000FF] text-white rounded-[10px]">
-          <h2 className="mb-1 font-bold text-[#aee9f5]">
-            Demo Access Credentials
-          </h2>
-          <p className="mb-3 text-[#aee9f5]">
+        <div className="w-[250px] mb-2 p-4 bg-[#aee9f5] rounded-[10px]">
+          <h2 className="mb-1 font-bold">Demo Access Credentials</h2>
+          <p className="mb-3">
             Enter these credentials for a full access of the site:
           </p>
-          <p className="text-[#aee9f5]">
-            Email: <span className="font-bold text-white">admin@gmail.com</span>
+          <p>
+            Email: <span className="font-bold">admin@gmail.com</span>
           </p>
-          <p className="text-[#aee9f5]">
-            Password: <span className="font-bold text-white">Password123@</span>
+          <p>
+            Password: <span className="font-bold">Password123@</span>
           </p>
         </div>
         <form onSubmit={handleSubmit} className="w-[250px] max-w-full">
